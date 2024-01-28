@@ -1,19 +1,8 @@
 import "../app/globals.css";
 import Navbar from "@/components/Navbar";
 import SmoothScroll from "@/components/SmoothScroll";
-import { Inter } from "next/font/google";
-import localfont from "next/font/local";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-
-const sonder = localfont({
-  src: [
-    {
-      path: "../public/fonts/SonderRegular.otf",
-    },
-  ],
-  variable: "--font-sonder",
-});
+import { inter, sonder } from "../components/Fonts";
+import Cursor from "@/components/Cursor";
 
 export const metadata = {
   title: "Paramveer Singh",
@@ -24,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} ${sonder.variable} h-screen`}>
+        <Cursor />
         <SmoothScroll>
           <Navbar />
           {children}
