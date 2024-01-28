@@ -6,23 +6,29 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    // added custom colors here
     colors: {
-      black: "#282829",
-      white: "#f5f4f5",
-      orange: "#ed7c50",
-      darkorange: "#d96d43",
-      purple: "#8566f6",
-      turks: "#a6e2e3",
-      red: "#e46060",
-      darkgrey: "#595959",
-      lightgrey: "#8a8a8a",
-      green: "#43ae61",
+      tblack: "#282829",
+      twhite: "#f5f4f5",
+      torange: "#ed7c50",
+      tdarkorange: "#d96d43",
+      tpurple: "#8566f6",
+      tturks: "#a6e2e3",
+      tred: "#e46060",
+      tdarkgrey: "#595959",
+      tlightgrey: "#8a8a8a",
+      tgreen: "#43ae61",
     },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      // added custom fonts here
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        sonder: ["var(--font-sonder)"],
       },
     },
   },

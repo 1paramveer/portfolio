@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.link:hover {
-  opacity: 0.85;
-  transition: 200;
+html {
+  color: #f5f4f5;
+  background-color: rgba(0, 0, 0, 0.97);
+}
+
+::selection {
+  background: #f5f4f5;
+  color: black;
 }
