@@ -6,30 +6,40 @@ import { gsap } from "gsap";
 const Cursor = () => {
   useEffect(() => {
     const cursor = document.getElementById("custom-cursor");
-    const links = document.querySelectorAll("a,.enlarge-cursor");
+    const target = document.querySelectorAll(".enlarge-cursor");
+    const link = document.querySelectorAll("a");
 
     const onMouseMove = (e) => {
       const { clientX, clientY } = e;
       gsap.to(cursor, { x: clientX - 10, y: clientY - 10 });
     };
 
-    const onMouseEnterLink = () => {
+    const scaleFour = () => {
       gsap.to(cursor, { scale: 4 });
     };
 
-    const onMouseLeaveLink = () => {
+    const scaleOne = () => {
       gsap.to(cursor, { scale: 1 });
+    };
+
+    const scaleZero = () => {
+      gsap.to(cursor, { scale: 0 });
     };
 
     document.addEventListener("mousemove", onMouseMove);
 
-    links.forEach((link) => {
-      link.addEventListener("mouseenter", onMouseEnterLink);
-      link.addEventListener("mouseleave", onMouseLeaveLink);
+    target.forEach((target) => {
+      target.addEventListener("mouseenter", scaleFour);
+      target.addEventListener("mouseleave", scaleOne);
+    });
+
+    link.forEach((link) => {
+      link.addEventListener("mouseenter", scaleZero);
+      link.addEventListener("mouseleave", scaleOne);
     });
   });
 
-  return <div id="custom-cursor" className="custom-cursor max-sm:hidden"></div>;
+  return <div id="custom-cursor" className="custom-cursor max-lg:hidden"></div>;
 };
 
 export default Cursor;
