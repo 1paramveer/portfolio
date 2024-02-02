@@ -2,14 +2,14 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center h-1/4 px-20 text-sm">
-      <div className="">
-        <p className="enlarge-cursor font-sonder text-6xl text-twhite mt-2">
+    <nav className="flex justify-between max-md:justify-center items-center h-1/4 px-20 text-sm">
+      <div>
+        <p className="enlarge-cursor font-sonder text-6xl text-twhite mt-2 text-center">
           Paramveer Singh
         </p>
         {/* <p className="pl-20 font-sonder text-6xl">Developer</p> */}
       </div>
-      <div className="w-48 flex justify-between -mt-4 -mr-4">
+      <div className="flex w-48 max-md:hidden justify-between -mt-4 -mr-4">
         <Link
           href="https://www.linkedin.com/in/1paramveer/edin.com/in/1paramveer/"
           target="_blank"

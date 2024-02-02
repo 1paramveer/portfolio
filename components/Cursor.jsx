@@ -10,7 +10,7 @@ const Cursor = () => {
 
     const onMouseMove = (e) => {
       const { clientX, clientY } = e;
-      gsap.to(cursor, { x: clientX, y: clientY });
+      gsap.to(cursor, { x: clientX - 10, y: clientY - 10 });
     };
 
     const onMouseEnterLink = () => {
@@ -29,7 +29,7 @@ const Cursor = () => {
     });
   });
 
-  return <div id="custom-cursor" className="custom-cursor"></div>;
+  return <div id="custom-cursor" className="custom-cursor max-sm:hidden"></div>;
 };
 
 export default Cursor;
