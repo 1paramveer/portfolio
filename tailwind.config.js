@@ -28,6 +28,7 @@ module.exports = {
       // added custom fonts here
       fontFamily: {
         inter: ["var(--font-inter)"],
+        jetbrains: ["var(--font-jetbrains)"],
         sonder: ["var(--font-sonder)"],
       },
     },
