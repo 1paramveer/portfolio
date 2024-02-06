@@ -7,7 +7,7 @@ const Cursor = () => {
   useEffect(() => {
     const cursor = document.getElementById("custom-cursor");
     const target = document.querySelectorAll(".enlarge-cursor");
-    const link = document.querySelectorAll("a");
+    const link = document.querySelectorAll(".reduce-cursor");
 
     const onMouseMove = (e) => {
       const { clientX, clientY } = e;

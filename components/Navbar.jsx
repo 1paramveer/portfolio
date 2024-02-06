@@ -13,20 +13,20 @@ const Navbar = () => {
         <Link
           href="https://www.linkedin.com/in/1paramveer/edin.com/in/1paramveer/"
           target="_blank"
-          className="opacity-60 duration-200 hover:opacity-100"
+          className="reduce-cursor opacity-60 duration-200 hover:opacity-100"
         >
           LinkedIn
         </Link>
         <Link
           href="https://github.com/1paramveer"
           target="_blank"
-          className="opacity-60 duration-200 hover:opacity-100"
+          className="reduce-cursor opacity-60 duration-200 hover:opacity-100"
         >
           GitHub
         </Link>
         <Link
           href="mailto:paramsingh1205@hotmail.com"
-          className="opacity-60 duration-200 hover:opacity-100"
+          className="reduce-cursor opacity-60 duration-200 hover:opacity-100"
         >
           Contact
         </Link>

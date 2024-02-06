@@ -8,8 +8,8 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className="w-1/3 font-jetbrains">
-      <p className="opacity-60 mb-2">Work</p>
+    <div className="w-1/3 font-jetbrains h-full flex flex-col justify-end max-lg:justify-center p-20 max-lg:w-full max-lg:pb-0 min-w-72">
+      <p className="mb-2">Work_</p>
       <div>
         <div className="flex justify-between">
           <p className="font-inter">
