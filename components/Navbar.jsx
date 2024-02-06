@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 const Clock = () => {
-  const [currentTime, setCurrentTime] = React.useState("00:00:00");
+  const [currentTime, setCurrentTime] = React.useState("00 : 00 : 00");
 
   React.useEffect(() => {
     const updateCurrentTime = () => {
