@@ -1,35 +1,14 @@
-"use client";
 import React from "react";
 import Link from "next/link";
-
-const Clock = () => {
-  const [currentTime, setCurrentTime] = React.useState("00 : 00 : 00");
-
-  React.useEffect(() => {
-    const updateCurrentTime = () => {
-      const d = new Date();
-      const hours = String(d.getHours()).padStart(2, "0");
-      const minutes = String(d.getMinutes()).padStart(2, "0");
-      const seconds = String(d.getSeconds()).padStart(2, "0");
-      setCurrentTime(`${hours} : ${minutes} : ${seconds}`);
-    };
-
-    updateCurrentTime();
-
-    const timer = setInterval(updateCurrentTime, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  return <>{currentTime}</>;
-};
+import { currentDaySet, Clock } from "@/components/DateTime";
 
 const Navbar = () => {
   return (
     <nav className="flex justify-between max-lg:justify-center items-center h-1/4 px-20 text-sm">
       <div>
-        <div className="opacity-60 max-lg:hidden">
+        <div className="opacity-60 max-lg:hidden flex">
           <Clock />
+          <p className="pl-2">{currentDaySet}</p>
         </div>
         <p className="enlarge-cursor font-sonder text-6xl text-twhite mt-2 text-center">
           Paramveer Singh
