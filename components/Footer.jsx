@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="hidden max-lg:flex max-lg:flex-col mx-10 max-sm:mb-6 mb-10">
       <div className="flex justify-end max-sm:justify-between">
         <Link
-          href="https://www.linkedin.com/in/1paramveer/edin.com/in/1paramveer/"
+          href="https://www.linkedin.com/in/1paramveer/"
           target="_blank"
           className="opacity-60 duration-200 hover:opacity-100 pr-5"
         >

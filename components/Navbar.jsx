@@ -16,7 +16,7 @@ const Navbar = () => {
       </div>
       <div className="flex w-48 max-lg:hidden justify-between -mt-4 -mr-4">
         <Link
-          href="https://www.linkedin.com/in/1paramveer/edin.com/in/1paramveer/"
+          href="https://www.linkedin.com/in/1paramveer/"
           target="_blank"
           className="reduce-cursor opacity-60 duration-200 hover:opacity-100"
         >
