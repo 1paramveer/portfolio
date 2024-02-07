@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${sonder.variable} ${jetbrains_mono.variable} flex flex-col h-screen min-w-96`}
+        className={`${inter.variable} ${sonder.variable} ${jetbrains_mono.variable} flex flex-col h-screen overscroll-y-none min-w-96`}
       >
         <Cursor />
         <SmoothScroll>
