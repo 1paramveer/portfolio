@@ -19,6 +19,7 @@ function NotFound() {
             <Link
               href="/"
               className="bg-[#FFFFFF] text-[#000000] font-bold px-1 enlarge-cursor"
+              replace
             >
               home
             </Link>
