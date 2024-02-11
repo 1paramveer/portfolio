@@ -20,7 +20,7 @@ function HamburgerMenu() {
   useEffect(() => {}, [isOpen]);
 
   return (
-    <div className="hidden max-lg:block z-[2]">
+    <div className="hidden max-md:block z-[2]">
       <div className="nav-overlay inset-0 fixed bg-[#FF0000] opacity-0 hidden">
         <div className="flex flex-col h-full justify-center ml-[50px]">
           <p className="text-4xl font-jetbrains mb-14">Get in touch_</p>

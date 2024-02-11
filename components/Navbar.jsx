@@ -4,9 +4,9 @@ import { currentDaySet, Clock } from "@/components/DateTime";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between max-lg:justify-center items-center h-1/4 max-sm:h-1/6 px-20 text-sm">
+    <nav className="flex justify-between max-md:justify-center items-center h-1/4 max-sm:h-1/6 px-20 text-sm">
       <div>
-        <div className="opacity-60 max-lg:hidden flex">
+        <div className="opacity-60 max-md:hidden flex">
           <Clock />
           <p className="pl-2">{currentDaySet}</p>
         </div>
@@ -14,7 +14,7 @@ const Navbar = () => {
           Paramveer Singh
         </p>
       </div>
-      <div className="flex w-48 max-lg:hidden justify-between -mt-4 -mr-4">
+      <div className="flex w-48 max-md:hidden justify-between -mt-4 -mr-4">
         <Link
           href="https://www.linkedin.com/in/1paramveer/"
           target="_blank"
