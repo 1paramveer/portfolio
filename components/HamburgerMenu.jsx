@@ -23,7 +23,9 @@ function HamburgerMenu() {
     <div className="hidden max-md:block z-[2]">
       <div className="nav-overlay inset-0 fixed bg-[#FF0000] opacity-0 hidden">
         <div className="flex flex-col h-full justify-center ml-[50px]">
-          <p className="text-4xl font-jetbrains mb-14">Get in touch_</p>
+          <p className="text-4xl max-xs:text-2xl font-jetbrains mb-14">
+            Get in <span className="bg-[#FFFFFF] text-[#000000]">touch_</span>
+          </p>
           <div className="flex">
             <Link
               href="https://www.linkedin.com/in/1paramveer/"
