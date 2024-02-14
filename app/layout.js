@@ -1,11 +1,5 @@
 import "../app/globals.css";
-import {
-  inter,
-  sonder,
-  jetbrains_mono,
-  dm_mono,
-  dm_sans,
-} from "../components/Fonts";
+import { inter, sonder, dm_mono, dm_sans } from "../components/Fonts";
 import Cursor from "@/components/Cursor";
 import SmoothScroll from "@/components/SmoothScroll";
 import HamburgerMenu from "@/components/HamburgerMenu";
