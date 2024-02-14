@@ -5,20 +5,14 @@ import Link from "next/link";
 import "../app/page.css";
 
 const page = () => {
-  const timeLine = gsap.timeline();
-
-  const animatePage = () => {
-    timeLine.to(".text-split", {
+  useEffect(() => {
+    gsap.to(".text-split", {
       y: "0%",
       duration: 1,
       stagger: 0.1,
       delay: 0.2,
       ease: "power2.out",
     });
-  };
-
-  useEffect(() => {
-    animatePage();
   }, []);
 
   return (
