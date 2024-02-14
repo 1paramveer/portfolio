@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function NotFound() {
   return (
-    <div className="z-[1] fixed h-full w-full flex flex-col items-center font-jetbrains mt-20">
+    <div className="z-[1] fixed h-full w-full flex flex-col items-center font-jetbrains mt-20 text-twhite">
       <div className="w-[75%]">
         <p className="enlarge-cursor text-center text-6xl max-md:text-4xl mb-20 max-sm:mb-10">
           Uh-Oh! Not Found
@@ -18,7 +18,7 @@ function NotFound() {
             Go back{" "}
             <Link
               href="/"
-              className="bg-[#FFFFFF] text-[#000000] font-bold px-1 enlarge-cursor"
+              className="font-dmMono font-bold bg-twhite text-[#000000] px-1 enlarge-cursor"
             >
               home
             </Link>
@@ -26,7 +26,7 @@ function NotFound() {
           <li>
             <Link
               href="mailto:paramsingh1205@hotmail.com"
-              className="bg-[#FFFFFF] text-[#000000] font-bold px-1 enlarge-cursor"
+              className="font-dmMono font-bold bg-twhite text-[#000000] px-1 enlarge-cursor"
             >
               {" "}
               Reach

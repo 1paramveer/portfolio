@@ -33,7 +33,7 @@ function HamburgerMenu() {
       <div className="nav-overlay inset-0 fixed bg-[#FF0000] opacity-0 hidden">
         <div className="flex flex-col h-full justify-center ml-[50px]">
           <p className="text-4xl max-xs:text-2xl font-dmMono mb-14">
-            Get in <span className="bg-[#FFFFFF] text-[#000000]">touch_</span>
+            Get in <span className="bg-twhite text-[#000000]">touch_</span>
           </p>
           <div className="flex">
             <Link
