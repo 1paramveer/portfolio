@@ -35,7 +35,8 @@ module.exports = {
       // added custom fonts here
       fontFamily: {
         inter: ["var(--font-inter)"],
-        jetbrains: ["var(--font-jetbrains)"],
+        dmMono: ["var(--font-dm-mono)"],
+        dmSans: ["var(--font-dm-sans)"],
         sonder: ["var(--font-sonder)"],
       },
     },

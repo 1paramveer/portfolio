@@ -1,5 +1,11 @@
 import "../app/globals.css";
-import { inter, sonder, jetbrains_mono } from "../components/Fonts";
+import {
+  inter,
+  sonder,
+  jetbrains_mono,
+  dm_mono,
+  dm_sans,
+} from "../components/Fonts";
 import Cursor from "@/components/Cursor";
 import SmoothScroll from "@/components/SmoothScroll";
 import HamburgerMenu from "@/components/HamburgerMenu";
@@ -10,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${sonder.variable} ${jetbrains_mono.variable} flex flex-col overflow-hidden fixed h-full w-full`}
+        className={`${inter.variable} ${sonder.variable} ${dm_mono.variable} ${dm_sans.variable} flex flex-col overflow-hidden fixed h-full w-full`}
       >
         <Cursor />
         <SmoothScroll>
