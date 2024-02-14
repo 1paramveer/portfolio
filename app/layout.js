@@ -1,4 +1,7 @@
+"use client";
+import React, { useEffect } from "react";
 import "../app/globals.css";
+import gsap from "gsap";
 import { inter, sonder, dm_mono, dm_sans } from "../components/Fonts";
 import Cursor from "@/components/Cursor";
 import SmoothScroll from "@/components/SmoothScroll";
@@ -7,6 +10,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    gsap.to(".text-split", {
+      y: "0%",
+      duration: 1,
+      stagger: 0.1,
+      ease: "power2.out",
+    });
+  }, []);
+
   return (
     <html lang="en">
       <body

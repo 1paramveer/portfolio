@@ -29,51 +29,53 @@ function HamburgerMenu() {
   useEffect(() => {}, [isOpen]);
 
   return (
-    <div className="hidden max-md:block z-[2]">
-      <div className="nav-overlay inset-0 fixed bg-[#FF0000] opacity-0 hidden">
-        <div className="flex flex-col h-full justify-center ml-[50px]">
-          <p className="text-4xl max-xs:text-2xl font-dmMono mb-14">
-            Get in <span className="bg-twhite text-[#000000]">touch_</span>
-          </p>
-          <div className="flex">
-            <Link
-              href="/"
-              onClick={closeMenu}
-              className="font-sonder text-[#000000] text-4xl mb-5 w-36"
-            >
-              Home
-            </Link>
-            <div className="-mt-[6px]">
-              <RedirectIcon />
+    <div className="overflow-hidden">
+      <div className="text-split translate-y-[150%] hidden max-md:block z-[2]">
+        <div className="nav-overlay inset-0 fixed bg-[#FF0000] opacity-0 hidden">
+          <div className="flex flex-col h-full justify-center ml-[50px]">
+            <p className="text-4xl max-xs:text-2xl font-dmMono mb-14">
+              Get in <span className="bg-twhite text-[#000000]">touch_</span>
+            </p>
+            <div className="flex">
+              <Link
+                href="/"
+                onClick={closeMenu}
+                className="font-sonder text-[#000000] text-4xl mb-5 w-36"
+              >
+                Home
+              </Link>
+              <div className="-mt-[6px]">
+                <RedirectIcon />
+              </div>
             </div>
-          </div>
-          <div className="flex">
-            <Link
-              href="/About"
-              onClick={closeMenu}
-              className="font-sonder text-[#000000] text-4xl mb-5 w-36"
-            >
-              About
-            </Link>
-            <div className="-mt-[6px]">
-              <RedirectIcon />
+            <div className="flex">
+              <Link
+                href="/About"
+                onClick={closeMenu}
+                className="font-sonder text-[#000000] text-4xl mb-5 w-36"
+              >
+                About
+              </Link>
+              <div className="-mt-[6px]">
+                <RedirectIcon />
+              </div>
             </div>
-          </div>
-          <div className="flex">
-            <Link
-              href="mailto:paramsingh1205@hotmail.com"
-              className="font-sonder text-[#000000] text-4xl mb-5 w-36"
-            >
-              Contact
-            </Link>
-            <div className="-mt-[6px]">
-              <RedirectIcon />
+            <div className="flex">
+              <Link
+                href="mailto:paramsingh1205@hotmail.com"
+                className="font-sonder text-[#000000] text-4xl mb-5 w-36"
+              >
+                Contact
+              </Link>
+              <div className="-mt-[6px]">
+                <RedirectIcon />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-end m-5" onClick={toggleMenu}>
-        <Hamburger duration={1} toggled={isOpen} />
+        <div className="flex justify-end m-5" onClick={toggleMenu}>
+          <Hamburger duration={1} toggled={isOpen} />
+        </div>
       </div>
     </div>
   );
