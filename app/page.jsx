@@ -4,7 +4,7 @@ import gsap from "gsap";
 import Link from "next/link";
 import "../app/page.css";
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     gsap.to(".text-split", {
       y: "0%",
@@ -60,4 +60,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
