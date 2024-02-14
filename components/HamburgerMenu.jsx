@@ -29,9 +29,9 @@ function HamburgerMenu() {
   useEffect(() => {}, [isOpen]);
 
   return (
-    <div className="overflow-hidden">
-      <div className="text-split translate-y-[150%] hidden max-md:block z-[2]">
-        <div className="nav-overlay inset-0 fixed bg-[#FF0000] opacity-0 hidden">
+    <div className="hidden max-md:block max-md:z-[2]">
+      <div>
+        <div className="nav-overlay fixed inset-0 bg-[#FF0000] opacity-0 hidden">
           <div className="flex flex-col h-full justify-center ml-[50px]">
             <p className="text-4xl max-xs:text-2xl font-dmMono mb-14">
               Get in <span className="bg-twhite text-[#000000]">touch_</span>
@@ -73,9 +73,12 @@ function HamburgerMenu() {
             </div>
           </div>
         </div>
-        <div className="flex justify-end m-5" onClick={toggleMenu}>
-          <Hamburger duration={1} toggled={isOpen} />
-        </div>
+      </div>
+      <div
+        className="text-split translate-y-[-110%] flex justify-end m-5"
+        onClick={toggleMenu}
+      >
+        <Hamburger duration={1} toggled={isOpen} />
       </div>
     </div>
   );

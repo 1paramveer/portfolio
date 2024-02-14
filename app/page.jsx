@@ -1,20 +1,9 @@
 "use client";
-import React, { useEffect } from "react";
-import gsap from "gsap";
+import React from "react";
 import Link from "next/link";
 import "../app/page.css";
 
 const Page = () => {
-  useEffect(() => {
-    gsap.to(".text-split", {
-      y: "0%",
-      duration: 1,
-      stagger: 0.1,
-      delay: 0.2,
-      ease: "power2.out",
-    });
-  }, []);
-
   return (
     <div className="w-2/4 h-full flex flex-col justify-end max-md:justify-center p-20 max-sm:p-10 max-lg:w-full max-md:pb-0 text-twhite">
       <div className="overflow-hidden">
