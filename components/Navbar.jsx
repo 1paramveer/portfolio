@@ -5,7 +5,7 @@ import { currentDaySet, Clock } from "@/components/DateTime";
 const Navbar = () => {
   return (
     <nav className="flex justify-between max-md:justify-center items-center h-1/4 max-sm:h-1/6 px-20 text-sm">
-      <div>
+      <div className="mt-10">
         <div className="opacity-60 max-md:hidden flex">
           <Clock />
           <p className="pl-2">{currentDaySet}</p>
