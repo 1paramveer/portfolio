@@ -73,7 +73,7 @@ function HamburgerMenu() {
         </div>
       </div>
       <div className="flex justify-end m-5" onClick={toggleMenu}>
-        <Hamburger duration={2} toggled={isOpen} />
+        <Hamburger duration={1} toggled={isOpen} />
       </div>
     </div>
   );
