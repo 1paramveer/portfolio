@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Spiral as Hamburger } from "hamburger-react";
 import Link from "next/link";
 import gsap from "gsap";
@@ -24,51 +24,66 @@ function HamburgerMenu() {
       opacity: newOpacity,
       display: open ? "block" : "none",
     });
-  };
 
-  useEffect(() => {}, [isOpen]);
+    gsap.to(".menu-text-split", {
+      y: "0%",
+      duration: 0.8,
+      stagger: 0.2,
+      delay: 0.3,
+      ease: "power2.out",
+    });
+  };
 
   return (
     <div className="hidden max-md:block max-md:z-[2]">
       <div>
         <div className="nav-overlay fixed inset-0 bg-[#FF0000] opacity-0 hidden">
           <div className="flex flex-col h-full justify-center ml-[50px]">
-            <p className="text-4xl max-xs:text-2xl font-dmMono mb-14">
-              Get in <span className="bg-twhite text-[#000000]">touch_</span>
-            </p>
-            <div className="flex">
+            <div className="overflow-hidden">
+              <p className="menu-text-split -translate-y-[110%] text-4xl max-xs:text-2xl font-dmMono mb-14">
+                Get in <span className="bg-twhite text-[#000000]">touch_</span>
+              </p>
+            </div>
+
+            <div className="overflow-hidden flex">
               <Link
                 href="/"
                 onClick={closeMenu}
-                className="font-sonder text-[#000000] text-4xl mb-5 w-36"
+                className="menu-text-split -translate-y-full font-sonder text-[#000000] text-4xl mb-5 w-36"
               >
                 Home
               </Link>
-              <div className="-mt-[6px]">
-                <RedirectIcon />
+              <div className="overflow-hidden -mt-[6px]">
+                <div className="menu-text-split -translate-y-full">
+                  <RedirectIcon />
+                </div>
               </div>
             </div>
-            <div className="flex">
+            <div className="overflow-hidden flex">
               <Link
                 href="/About"
                 onClick={closeMenu}
-                className="font-sonder text-[#000000] text-4xl mb-5 w-36"
+                className="menu-text-split -translate-y-full font-sonder text-[#000000] text-4xl mb-5 w-36"
               >
                 About
               </Link>
-              <div className="-mt-[6px]">
-                <RedirectIcon />
+              <div className="overflow-hidden -mt-[6px]">
+                <div className="menu-text-split -translate-y-full">
+                  <RedirectIcon />
+                </div>
               </div>
             </div>
-            <div className="flex">
+            <div className="overflow-hidden flex">
               <Link
                 href="mailto:paramsingh1205@hotmail.com"
-                className="font-sonder text-[#000000] text-4xl mb-5 w-36"
+                className="menu-text-split -translate-y-full font-sonder text-[#000000] text-4xl mb-5 w-36"
               >
                 Contact
               </Link>
-              <div className="-mt-[6px]">
-                <RedirectIcon />
+              <div className="overflow-hidden -mt-[6px]">
+                <div className="menu-text-split -translate-y-full">
+                  <RedirectIcon />
+                </div>
               </div>
             </div>
           </div>
