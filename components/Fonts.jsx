@@ -1,12 +1,7 @@
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import localfont from "next/font/local";
 
 export const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-
-export const jetbrains_mono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains",
-});
 
 export const sonder = localfont({
   src: [
@@ -15,4 +10,13 @@ export const sonder = localfont({
     },
   ],
   variable: "--font-sonder",
+});
+
+export const jetbrains_mono = localfont({
+  src: [
+    {
+      path: "../public/fonts/JetBrainsMono.ttf",
+    },
+  ],
+  variable: "--font-jetbrains",
 });
