@@ -14,20 +14,18 @@ const Navbar = () => {
           Paramveer Singh
         </p>
       </div>
-      <div className="flex w-48 max-md:hidden justify-between -mt-4 -mr-4">
+      <div className="flex max-md:hidden justify-between -mt-4 -mr-4">
         <Link
-          href="https://www.linkedin.com/in/1paramveer/"
-          target="_blank"
-          className="reduce-cursor opacity-60 duration-200 hover:opacity-100"
+          href="/"
+          className="reduce-cursor opacity-60 duration-200 hover:opacity-100 mr-5"
         >
-          LinkedIn
+          Home
         </Link>
         <Link
-          href="https://github.com/1paramveer"
-          target="_blank"
-          className="reduce-cursor opacity-60 duration-200 hover:opacity-100"
+          href="/About"
+          className="reduce-cursor opacity-60 duration-200 hover:opacity-100 mr-5"
         >
-          GitHub
+          About
         </Link>
         <Link
           href="mailto:paramsingh1205@hotmail.com"

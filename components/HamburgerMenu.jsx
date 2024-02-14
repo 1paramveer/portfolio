@@ -28,11 +28,10 @@ function HamburgerMenu() {
           </p>
           <div className="flex">
             <Link
-              href="https://www.linkedin.com/in/1paramveer/"
-              target="_blank"
+              href="/"
               className="font-sonder text-[#000000] text-4xl mb-5 w-36"
             >
-              LinkedIn
+              Home
             </Link>
             <div className="-mt-[6px]">
               <RedirectIcon />
@@ -40,11 +39,10 @@ function HamburgerMenu() {
           </div>
           <div className="flex">
             <Link
-              href="https://github.com/1paramveer"
-              target="_blank"
+              href="/About"
               className="font-sonder text-[#000000] text-4xl mb-5 w-36"
             >
-              GitHub
+              About
             </Link>
             <div className="-mt-[6px]">
               <RedirectIcon />
