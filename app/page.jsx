@@ -18,13 +18,13 @@ const Page = () => {
   return (
     <div className="w-2/4 h-full flex flex-col justify-end max-md:justify-center p-20 max-sm:p-10 max-lg:w-full max-md:pb-0 text-twhite">
       <div className="overflow-hidden">
-        <p className="text-split translate-y-[115%] font-dmMono mb-2 opacity-60">
-          Work_
+        <p className="text-split translate-y-[115%] font-dmMono mb-2 text font-bold">
+          <span className="opacity-60 font-medium">Work</span>_
         </p>
       </div>
 
       <div>
-        <div className="overflow-hidden flex justify-between">
+        <div className="overflow-hidden flex justify-between mb-1">
           <p className="text-split translate-y-full font-dmSans">
             <span className=" font-dmMono mr-5 opacity-60">01</span>
             <Link
@@ -40,7 +40,7 @@ const Page = () => {
           </p>
         </div>
 
-        <div className="overflow-hidden flex justify-between">
+        <div className="overflow-hidden flex justify-between mb-1">
           <p className="text-split translate-y-full font-dmSans">
             <span className="font-dmMono mr-5 opacity-60">02</span>
             <Link

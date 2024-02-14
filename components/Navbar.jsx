@@ -12,14 +12,12 @@ const Navbar = () => {
             <p className="pl-2">{currentDaySet}</p>
           </div>
         </div>
-        <div className="max-md:hidden">
-          {" "}
+        <div className="max-sm:hidden">
           <p className="text-split translate-y-full enlarge-cursor font-sonder text-6xl text-twhite mt-2 text-center">
             Paramveer Singh
           </p>
         </div>
-        <div className="lg:hidden overflow-hidden">
-          {" "}
+        <div className="sm:hidden overflow-hidden">
           <div className="overflow-hidden">
             <p className="text-split translate-y-full enlarge-cursor font-sonder text-6xl text-twhite text-center">
               Paramveer
