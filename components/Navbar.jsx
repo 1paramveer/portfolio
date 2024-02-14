@@ -1,8 +1,20 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import gsap from "gsap";
 import Link from "next/link";
 import { currentDaySet, Clock } from "@/components/DateTime";
 
 const Navbar = () => {
+  useEffect(() => {
+    gsap.to(".text-split", {
+      y: "0%",
+      duration: 1,
+      stagger: 0.1,
+      delay: 0.2,
+      ease: "power2.out",
+    });
+  }, []);
+
   return (
     <nav className="flex justify-between max-md:justify-center items-center h-1/4 px-20 max-sm:px-3 text-sm">
       <div className="mt-10 max-sm:mt-3 overflow-hidden">
