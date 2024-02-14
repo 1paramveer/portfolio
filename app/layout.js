@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
       y: "0%",
       duration: 1,
       stagger: 0.1,
+      delay: 0.25,
       ease: "power2.out",
     });
   }, []);
