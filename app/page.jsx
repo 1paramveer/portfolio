@@ -1,12 +1,26 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import gsap from "gsap";
 import Link from "next/link";
 import "../app/page.css";
 
-export const metadata = {
-  title: "Paramveer Singh",
-};
-
 const page = () => {
+  const timeLine = gsap.timeline();
+
+  const animatePage = () => {
+    timeLine.to(".text-split", {
+      y: "0%",
+      duration: 1,
+      stagger: 0.1,
+      delay: 0.2,
+      ease: "power2.out",
+    });
+  };
+
+  useEffect(() => {
+    animatePage();
+  }, []);
+
   return (
     <div className="w-2/4 h-full flex flex-col justify-end max-md:justify-center p-20 max-sm:p-10 max-lg:w-full max-md:pb-0 text-twhite">
       <div className="overflow-hidden">
