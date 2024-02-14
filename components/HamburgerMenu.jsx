@@ -10,10 +10,19 @@ function HamburgerMenu() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    const newOpacity = isOpen ? 0 : 1;
+    updateMenuVisibility(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+    updateMenuVisibility(false);
+  };
+
+  const updateMenuVisibility = (open) => {
+    const newOpacity = open ? 1 : 0;
     gsap.to(".nav-overlay", {
       opacity: newOpacity,
-      display: isOpen ? "none" : "block",
+      display: open ? "block" : "none",
     });
   };
 
@@ -29,6 +38,7 @@ function HamburgerMenu() {
           <div className="flex">
             <Link
               href="/"
+              onClick={closeMenu}
               className="font-sonder text-[#000000] text-4xl mb-5 w-36"
             >
               Home
@@ -40,6 +50,7 @@ function HamburgerMenu() {
           <div className="flex">
             <Link
               href="/About"
+              onClick={closeMenu}
               className="font-sonder text-[#000000] text-4xl mb-5 w-36"
             >
               About
@@ -62,7 +73,7 @@ function HamburgerMenu() {
         </div>
       </div>
       <div className="flex justify-end m-5" onClick={toggleMenu}>
-        <Hamburger duration={1} toggled={isOpen} />
+        <Hamburger duration={2} toggled={isOpen} />
       </div>
     </div>
   );
