@@ -54,7 +54,7 @@ function HamburgerMenu() {
                 Home
               </Link>
               <div className="overflow-hidden -mt-[6px]">
-                <div className="menu-text-split -translate-y-full">
+                <div className="menu-text-split -translate-y-full pt-1">
                   <RedirectIcon />
                 </div>
               </div>
@@ -68,7 +68,7 @@ function HamburgerMenu() {
                 About
               </Link>
               <div className="overflow-hidden -mt-[6px]">
-                <div className="menu-text-split -translate-y-full">
+                <div className="menu-text-split -translate-y-full pt-1">
                   <RedirectIcon />
                 </div>
               </div>
@@ -81,7 +81,7 @@ function HamburgerMenu() {
                 Contact
               </Link>
               <div className="overflow-hidden -mt-[6px]">
-                <div className="menu-text-split -translate-y-full">
+                <div className="menu-text-split -translate-y-full pt-1">
                   <RedirectIcon />
                 </div>
               </div>
