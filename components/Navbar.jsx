@@ -44,10 +44,11 @@ const Navbar = () => {
           About
         </Link>
         <Link
-          href="mailto:paramsingh1205@hotmail.com"
+          href="/resume.pdf"
+          target="_blank"
           className="text-split translate-y-full reduce-cursor opacity-60 duration-200 hover:opacity-100"
         >
-          Contact
+          Resume
         </Link>
       </div>
     </nav>

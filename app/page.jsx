@@ -18,8 +18,8 @@ const Page = () => {
   return (
     <div className="w-2/4 h-full flex flex-col justify-end max-md:justify-center p-20 max-sm:p-10 max-lg:w-full max-md:pb-0 text-twhite">
       <div className="overflow-hidden">
-        <p className="text-split translate-y-[115%] font-dmMono mb-2 text font-bold">
-          <span className="opacity-60 font-medium">Work</span>_
+        <p className="text-split translate-y-[115%] font-dmMono mb-2 opacity-60">
+          Work
         </p>
       </div>
 

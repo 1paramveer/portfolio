@@ -75,10 +75,11 @@ function HamburgerMenu() {
             </div>
             <div className="overflow-hidden flex">
               <Link
-                href="mailto:paramsingh1205@hotmail.com"
+                href="/resume.pdf"
+                target="_blank"
                 className="menu-text-split -translate-y-full font-sonder text-[#000000] text-4xl mb-5 w-36"
               >
-                Contact
+                Resume
               </Link>
               <div className="overflow-hidden -mt-[6px]">
                 <div className="menu-text-split -translate-y-full pt-1">
