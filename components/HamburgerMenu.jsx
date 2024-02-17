@@ -13,7 +13,7 @@ function HamburgerMenu() {
       y: "0%",
       duration: 0.8,
       stagger: 0.2,
-      delay: 1,
+      delay: 0.5,
       ease: "power2.out",
     });
   });
