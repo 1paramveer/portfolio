@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 
@@ -12,6 +11,15 @@ const Cursor = () => {
     const onMouseMove = (e) => {
       const { clientX, clientY } = e;
       gsap.to(cursor, { x: clientX - 10, y: clientY - 10 });
+
+      if (
+        clientX >= 0 &&
+        clientX <= window.innerWidth &&
+        clientY >= 0 &&
+        clientY <= window.innerHeight
+      ) {
+        gsap.to(cursor, { opacity: 1, delay: 0.5, duration: 0.25 });
+      }
     };
 
     const scaleFour = () => {
@@ -39,7 +47,12 @@ const Cursor = () => {
     });
   });
 
-  return <div id="custom-cursor" className="custom-cursor max-lg:hidden"></div>;
+  return (
+    <div
+      id="custom-cursor"
+      className="custom-cursor opacity-0 max-lg:hidden"
+    ></div>
+  );
 };
 
 export default Cursor;
