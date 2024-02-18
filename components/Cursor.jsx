@@ -18,7 +18,7 @@ const Cursor = () => {
         clientY >= 0 &&
         clientY <= window.innerHeight
       ) {
-        gsap.to(cursor, { opacity: 1, delay: 0.5, duration: 0.25 });
+        gsap.to(cursor, { opacity: 1, delay: 0.25, duration: 0.1 });
       }
     };
 
