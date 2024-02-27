@@ -45,7 +45,7 @@ const Cursor = () => {
       link.addEventListener("mouseenter", scaleZero);
       link.addEventListener("mouseleave", scaleOne);
     });
-  });
+  }, []);
 
   return (
     <div
