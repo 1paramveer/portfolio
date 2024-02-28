@@ -34,7 +34,7 @@ const Page = () => {
               Portfolio Website
             </Link>
           </p>
-          <p className="text-split-work translate-y-full font-dmMono enlarge-cursor duration-200 opacity-60 hover:opacity-100">
+          <p className="text-split-work translate-y-full font-dmMono duration-200 opacity-60 hover:opacity-100">
             2024
           </p>
         </div>
@@ -50,7 +50,7 @@ const Page = () => {
               BC3. Club Website
             </Link>
           </p>
-          <p className="text-split-work translate-y-full font-dmMono enlarge-cursor duration-200 opacity-60 hover:opacity-100">
+          <p className="text-split-work translate-y-full font-dmMono duration-200 opacity-60 hover:opacity-100">
             2024
           </p>
         </div>
