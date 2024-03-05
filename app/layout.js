@@ -22,9 +22,7 @@ export default function RootLayout({ children }) {
           <HamburgerMenu />
           <Navbar />
           <div className="flex-1">{children}</div>
-          <div className="hidden max-md:block">
-            <Footer />
-          </div>
+          <Footer />
         </SmoothScroll>
       </body>
     </html>
