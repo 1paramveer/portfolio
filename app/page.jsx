@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import Link from "next/link";
-import "../app/page.css";
 
 const Page = () => {
   useEffect(() => {
@@ -29,7 +28,7 @@ const Page = () => {
             <Link
               href=""
               target="_blank"
-              className="opacity-60 hover:opacity-100 duration-200"
+              className="reduce-cursor opacity-60 hover:opacity-100 duration-200"
             >
               Portfolio Website
             </Link>
@@ -45,7 +44,7 @@ const Page = () => {
             <Link
               href="https://bc3club.github.io/website/"
               target="_blank"
-              className="opacity-60 hover:opacity-100 duration-200"
+              className="reduce-cursor opacity-60 hover:opacity-100 duration-200"
             >
               BC3. Club Website
             </Link>
