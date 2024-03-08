@@ -14,17 +14,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${sonder.variable} ${dm_mono.variable} ${dm_sans.variable} flex flex-col overflow-hidden fixed h-full w-full`}
-      >
-        <Cursor />
-        <SmoothScroll>
-          <HamburgerMenu />
+      <SmoothScroll>
+        <body
+          className={`${inter.variable} ${sonder.variable} ${dm_mono.variable} ${dm_sans.variable} `}
+        >
+          <Cursor />
+          <div className="-mt-16 z-[10] fixed w-full flex justify-end">
+            <HamburgerMenu />
+          </div>
           <Navbar />
-          <div className="flex-1">{children}</div>
+          <div className="">{children}</div>
           <Footer />
-        </SmoothScroll>
-      </body>
+        </body>
+      </SmoothScroll>
     </html>
   );
 }

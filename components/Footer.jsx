@@ -15,7 +15,7 @@ const Footer = () => {
   });
 
   return (
-    <div className="overflow-hidden opacity-60 hidden justify-end max-md:flex max-sm:justify-center max-sm:text-[14px] mb-10 sm:mr-10">
+    <div className="w-full overflow-hidden opacity-60 hidden max-md:flex justify-center max-sm:text-[14px] mb-10 sm:mr-10 mt-5">
       <p className="text-split-time translate-y-full">
         <Clock />
       </p>

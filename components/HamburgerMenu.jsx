@@ -71,25 +71,11 @@ function HamburgerMenu() {
             </div>
             <div className="overflow-hidden flex">
               <Link
-                href="/About"
+                href="/about"
                 onClick={closeMenu}
                 className="text-split-menu-items -translate-y-full font-sonder text-[#000000] text-4xl mb-5 w-36"
               >
                 About
-              </Link>
-              <div className="overflow-hidden -mt-[6px]">
-                <div className="text-split-menu-items -translate-y-full pt-1">
-                  <RedirectIcon />
-                </div>
-              </div>
-            </div>
-            <div className="overflow-hidden flex">
-              <Link
-                href="/resume.pdf"
-                target="_blank"
-                className="text-split-menu-items -translate-y-full font-sonder text-[#000000] text-4xl mb-5 w-36"
-              >
-                Resume
               </Link>
               <div className="overflow-hidden -mt-[6px]">
                 <div className="text-split-menu-items -translate-y-full pt-1">

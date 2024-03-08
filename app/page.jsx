@@ -9,13 +9,14 @@ const Page = () => {
       y: "0%",
       duration: 1,
       stagger: 0.1,
-      delay: 0.2,
+      delay: 0.1,
       ease: "power2.out",
     });
   }, []);
 
   return (
     <div className="w-2/4 h-full flex flex-col justify-end max-md:justify-center p-20 max-sm:p-10 max-lg:w-full max-md:pb-0 text-twhite">
+      <div className="flex-1"></div>
       <div className="overflow-hidden">
         <p className="text-split-work translate-y-[115%] font-dmMono mb-2 opacity-60">
           Work
