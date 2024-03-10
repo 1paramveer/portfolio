@@ -10,7 +10,7 @@ const Navbar = () => {
       y: "0%",
       duration: 1,
       stagger: 0.1,
-      delay: 0.2,
+      delay: 0.4,
       ease: "power2.out",
     });
   }, []);

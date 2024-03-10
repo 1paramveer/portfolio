@@ -33,7 +33,7 @@ function About() {
         </div>
 
         <div className="flex flex-col mt-10 font-dmSans font-medium">
-          <p className="mr-5">all of my socials</p>
+          <p className="mr-5">all links</p>
           <div className="flex max-sm:flex-col mt-5 text-sm">
             <div className="mb-5">
               <Link
